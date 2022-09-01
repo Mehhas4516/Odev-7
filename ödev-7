@@ -1,0 +1,7 @@
+SELECT rating,title FROM film order by rating;
+
+SELECT replacement_cost,COUNT(*) FROM film GROUP BY replacement_cost HAVING COUNT(*)>50
+
+SELECT store_id, count(*) FROM customer group by store_id
+
+select country_id,count(*) from city group by country_id order by count desc limit 1
